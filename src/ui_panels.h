@@ -9,11 +9,10 @@ namespace peek {
 
 struct UIPanels {
     SaveOptions save_opts;
-    bool show_toolbar = true;
-    bool show_file_controls = true;
+    float bar_height = 0.0f;
 
-    void draw_toolbar(AnnotationTools& tools, AnnotationLayer& layer);
-    void draw_file_controls(const LoadedImage& img, const std::string& image_path);
+    void draw_top_bar(AnnotationTools& tools, AnnotationLayer& layer,
+                      const LoadedImage& img, const std::string& image_path);
     void draw_text_popup(AnnotationTools& tools, AnnotationLayer& layer);
 
     bool save_requested = false;

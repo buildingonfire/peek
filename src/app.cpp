@@ -15,6 +15,7 @@ bool App::init(HWND hwnd, const std::string& initial_path) {
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO();
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+    io.IniFilename = nullptr;
 
     load_font();
     apply_theme();
@@ -185,8 +186,7 @@ void App::frame() {
     tools.draw_preview(fg_dl, viewport);
 
     // Draw UI panels
-    panels.draw_toolbar(tools, annotations);
-    panels.draw_file_controls(image, current_path);
+    panels.draw_top_bar(tools, annotations, image, current_path);
     panels.draw_text_popup(tools, annotations);
 
     // Handle UI requests
