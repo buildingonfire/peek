@@ -17,7 +17,7 @@ A lightweight, fast image viewer and annotator for Windows. Built as a single se
 
 ## Screenshot
 
-*Coming soon*
+![Screenshot](screenshot.png)
 
 ## Building
 
