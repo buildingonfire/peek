@@ -1,6 +1,6 @@
 # Peek
 
-A lightweight, fast image viewer and annotator for Windows. Built as a single self-contained executable with no external dependencies.
+A lightweight image viewer and annotator writtend fir speed.  Humbly offered as a default image viewer for Windows. Built as a single self-contained executable with no external dependencies.
 
 ![C++20](https://img.shields.io/badge/C%2B%2B-20-blue) ![Windows](https://img.shields.io/badge/platform-Windows-lightgrey) ![DirectX 11](https://img.shields.io/badge/renderer-DirectX%2011-green)
 
